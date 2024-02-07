@@ -1,2 +1,8 @@
 Proyecto django crud
-este fichero contiene la informacion sonre la aplicacion
+
+para iniciar el proyecto instalar las dependencias
+pip instal -r requirements.txt
+
+iniicar el servidor
+
+python manage.py runserver
