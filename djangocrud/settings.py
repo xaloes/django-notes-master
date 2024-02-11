@@ -76,10 +76,15 @@ WSGI_APPLICATION = 'djangocrud.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'mi_base_de_datos',
+        'USER': 'mi_usuario',
+        'PASSWORD': 'mi_contraseña',
+        'HOST': 'db',  # Nombre del servicio definido en docker-compose.yml
+        'PORT': '5432',
     }
 }
+
 
 
 # Password validation
